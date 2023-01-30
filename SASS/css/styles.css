@@ -1,3 +1,31 @@
-.titulo {
+.letras, .parrafo-cuadro, .titulo-cuadro, .titulo-arriba {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.titulo-arriba {
+  border-bottom: 5px solid black;
   font-size: 60px;
+}
+
+.titulo-cuadro {
+  font-size: 30px;
+  -webkit-text-stroke: 1.5px black;
+  color: #a05000;
+}
+
+.parrafo-cuadro {
+  font-size: 20px;
+}
+
+.marco-cuadro {
+  width: 60%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 15px solid #a05000;
 }
