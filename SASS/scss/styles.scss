@@ -1,9 +1,10 @@
+
 // Variables
 
 $marron: #a05000;
 $tamaño_titulo_arriba: 60px;
-$tamaño_titulo_cuadro: ($tamaño_titulo_arriba/2);
-$tamaño_parrafo: ($tamaño_titulo_arriba/3);
+$tamaño_titulo_cuadro: ($tamaño_titulo_arriba/2); // Operación
+$tamaño_parrafo: ($tamaño_titulo_arriba/3); // Operación
 $fuente_museo: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 $tamaño_marco: 15px;
 
@@ -13,23 +14,23 @@ $tamaño_marco: 15px;
 }
 
 .titulo-arriba {
-    @extend.letras;
+    @extend.letras; // Extención
     border-bottom: 5px solid black;
     font-size: $tamaño_titulo_arriba;
-    &:hover {
+    &:hover { // Anidación
         -webkit-text-stroke: 1.5px $marron;
     }
 }
 
 .titulo-cuadro {
-    @extend.letras;
+    @extend.letras; // Extención
     font-size: $tamaño_titulo_cuadro;
     -webkit-text-stroke: 1.5px black;
     color: $marron; 
 }
 
 .parrafo-cuadro {
-    @extend.letras;
+    @extend.letras; // Extención
     font-size: $tamaño_parrafo;
 }
 
@@ -40,7 +41,7 @@ $tamaño_marco: 15px;
     align-items: center;
     width: 50%;
     border: $tamaño_marco solid $marron;
-    &:hover {
-        border: $tamaño_marco*2 solid $marron;
+    &:hover { // Anidación
+        border: $tamaño_marco*2 solid $marron; // Operación
     }
 }
