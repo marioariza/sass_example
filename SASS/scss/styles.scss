@@ -14,11 +14,20 @@ TOTAL {
 // Variables
 
 $marron: #a05000;
+$verde: rgb(35, 172, 35);
 $tamaño_titulo_arriba: 60px;
 $tamaño_titulo_cuadro: ($tamaño_titulo_arriba/2); // Operación 1
 $tamaño_parrafo: ($tamaño_titulo_arriba/3); // Operación 2
 $fuente_museo: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 $tamaño_marco: 15px;
+
+
+@mixin centrar {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .letras {
     text-align: center;
@@ -47,13 +56,24 @@ $tamaño_marco: 15px;
 }
 
 .marco-cuadro {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centrar();
     width: 50%;
     border: $tamaño_marco solid $marron;
     &:hover { // Selector 5: Anidación
         border: $tamaño_marco*2 solid $marron; // Operación 3
+    }
+}
+
+.titulo-listas {
+    @extend.titulo-cuadro;
+    color: $verde;
+}
+
+.listas {
+    @extend.letras;
+    @include centrar();
+    width: 50%;
+    &:hover { // Selector 6: Anidación
+        color: $verde;
     }
 }

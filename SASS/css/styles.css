@@ -10,7 +10,7 @@ TOTAL {
 }
 
 */
-.letras, .parrafo-cuadro, .titulo-cuadro, .titulo-arriba {
+.letras, .listas, .parrafo-cuadro, .titulo-cuadro, .titulo-listas, .titulo-arriba {
   text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
@@ -23,7 +23,7 @@ TOTAL {
   -webkit-text-stroke: 1.5px #a05000;
 }
 
-.titulo-cuadro {
+.titulo-cuadro, .titulo-listas {
   font-size: 30px;
   -webkit-text-stroke: 1.5px black;
   color: #a05000;
@@ -49,4 +49,25 @@ TOTAL {
 }
 .marco-cuadro:hover {
   border: 30px solid #a05000;
+}
+
+.titulo-listas {
+  color: rgb(35, 172, 35);
+}
+
+.listas {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+.listas:hover {
+  color: rgb(35, 172, 35);
 }
