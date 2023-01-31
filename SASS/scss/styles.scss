@@ -23,6 +23,17 @@ $tamaño_parrafo: ($tamaño_titulo_arriba/3); // Operación 2
 $fuente_museo: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 $tamaño_marco: 15px;
 
+// MIXINS 
+
+@mixin centrar {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// BODY
+
 .letras {
     text-align: center;
     font-family: $fuente_museo;
