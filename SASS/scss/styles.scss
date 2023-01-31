@@ -6,7 +6,7 @@ TOTAL {
     Operaciones y funciones: 4 Operaciones y 0 Funciones;
     Mixins: 1 Mixins;
     Bucles: 3 Bucles:
-    Includes y otras funciones: 2 includes + otras funciones;
+    Includes y otras funciones: 12 includes + otras funciones;
 }
 
 */
@@ -41,7 +41,7 @@ $tamaño_marco: 15px;
     @extend.letras; // Selector 3: Extención
     font-size: $tamaño_titulo_cuadro;
     -webkit-text-stroke: 1.5px black;
-    @include colorLetra($marron);
+    @include colorLetra($marron); // Include 1
 }
 
 .parrafo-cuadro {
@@ -50,7 +50,7 @@ $tamaño_marco: 15px;
 }
 
 .marco-cuadro {
-    @include centrar(); // Include 1
+    @include centrar(); // Include 2
     width: 50%;
     border: $tamaño_marco solid $marron;
     &:hover { // Selector 5: Anidación
@@ -65,48 +65,50 @@ $tamaño_marco: 15px;
 
 .listas {
     @extend.letras;
-    @include centrar(); // Include 2
+    @include centrar(); // Include 3
     font-size: $tamaño_titulo_cuadro/2; // Operación 4
     width: 50%;
     &:hover { // Selector 6: Anidación
-        @include colorLetra($verde);
+        @include colorLetra($verde); // Include 4
     }
 }
 
+// BUCLES
+
 @for $th from 0 through 5 {
     .arriba:hover {
-        @include colorLetra(grey);
+        @include colorLetra(grey); // Include 5
     }
 }
 
 @for $th from 0 to 5 {
     .lateral:hover {
-        @include colorLetra(green);
+        @include colorLetra(green); // Include 6
     }
 }
 
 @for $td from 0 to 5 {
     .DWES:hover {
-        @include colorLetra($verde);
+        @include colorLetra($verde); // Include 7
     }
 
     .DWEC:hover {
-        @include colorLetra(rgb(175, 175, 232));
+        @include colorLetra(rgb(175, 175, 232)); // Include 8
     }
 
     .DAW:hover {
-        @include colorLetra(rgb(232, 104, 104));
+        @include colorLetra(rgb(232, 104, 104)); // Include 9
     }
 
     .DIW:hover {
-        @include colorLetra(rgba(255, 166, 0, 0.6));
+        @include colorLetra(rgba(255, 166, 0, 0.6)); // Include 10
     }
 
     .EMP:hover {
-        @include colorLetra(rgba(255, 255, 0, 0.49));
+        @include colorLetra(rgba(255, 255, 0, 0.49)); // Include 11
     }
 
     .HLC:hover {
-        @include colorLetra(rgba(128, 0, 128, 0.359));
+        @include colorLetra(rgba(128, 0, 128, 0.359)); // Include 12
     }
 }
