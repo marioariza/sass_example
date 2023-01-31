@@ -7,6 +7,9 @@
   border-bottom: 5px solid black;
   font-size: 60px;
 }
+.titulo-arriba:hover {
+  -webkit-text-stroke: 1.5px #a05000;
+}
 
 .titulo-cuadro {
   font-size: 30px;
@@ -19,13 +22,19 @@
 }
 
 .marco-cuadro {
-  width: 60%;
-  height: 30%;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
   border: 15px solid #a05000;
+}
+.marco-cuadro:hover {
+  border: 30px solid #a05000;
 }

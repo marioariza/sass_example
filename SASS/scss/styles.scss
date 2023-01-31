@@ -5,6 +5,7 @@ $tamaño_titulo_arriba: 60px;
 $tamaño_titulo_cuadro: ($tamaño_titulo_arriba/2);
 $tamaño_parrafo: ($tamaño_titulo_arriba/3);
 $fuente_museo: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$tamaño_marco: 15px;
 
 .letras {
     text-align: center;
@@ -15,6 +16,9 @@ $fuente_museo: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     @extend.letras;
     border-bottom: 5px solid black;
     font-size: $tamaño_titulo_arriba;
+    &:hover {
+        -webkit-text-stroke: 1.5px $marron;
+    }
 }
 
 .titulo-cuadro {
@@ -30,9 +34,13 @@ $fuente_museo: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .marco-cuadro {
-    width: 60%;
-    height: 30%;
+    margin: auto;
     display: flex;
     justify-content: center;
-    border: 15px solid $marron;
+    align-items: center;
+    width: 50%;
+    border: $tamaño_marco solid $marron;
+    &:hover {
+        border: $tamaño_marco*2 solid $marron;
+    }
 }
