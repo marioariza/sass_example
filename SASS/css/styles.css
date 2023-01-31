@@ -1,3 +1,15 @@
+/*
+
+TOTAL {
+    Variables: 6;
+    Anidamos y operaciones: 6 selectores;
+    Operaciones y funciones: 3 Operaciones y 0 Funciones;
+    Mixins: 0 Mixins;
+    Bucles: 0 Bucles:
+    Includes y otras funciones: 0 includes + otras funciones;
+}
+
+*/
 .letras, .parrafo-cuadro, .titulo-cuadro, .titulo-arriba {
   text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;

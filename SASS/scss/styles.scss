@@ -1,10 +1,22 @@
+/*
+
+TOTAL {
+    Variables: 6;
+    Anidamos y operaciones: 6 selectores;
+    Operaciones y funciones: 3 Operaciones y 0 Funciones;
+    Mixins: 0 Mixins;
+    Bucles: 0 Bucles:
+    Includes y otras funciones: 0 includes + otras funciones;
+}
+
+*/
 
 // Variables
 
 $marron: #a05000;
 $tamaño_titulo_arriba: 60px;
-$tamaño_titulo_cuadro: ($tamaño_titulo_arriba/2); // Operación
-$tamaño_parrafo: ($tamaño_titulo_arriba/3); // Operación
+$tamaño_titulo_cuadro: ($tamaño_titulo_arriba/2); // Operación 1
+$tamaño_parrafo: ($tamaño_titulo_arriba/3); // Operación 2
 $fuente_museo: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 $tamaño_marco: 15px;
 
@@ -14,23 +26,23 @@ $tamaño_marco: 15px;
 }
 
 .titulo-arriba {
-    @extend.letras; // Extención
+    @extend.letras; // Selector 1: Extención
     border-bottom: 5px solid black;
     font-size: $tamaño_titulo_arriba;
-    &:hover { // Anidación
+    &:hover { // Selector 2: Anidación
         -webkit-text-stroke: 1.5px $marron;
     }
 }
 
 .titulo-cuadro {
-    @extend.letras; // Extención
+    @extend.letras; // Selector 3: Extención
     font-size: $tamaño_titulo_cuadro;
     -webkit-text-stroke: 1.5px black;
     color: $marron; 
 }
 
 .parrafo-cuadro {
-    @extend.letras; // Extención
+    @extend.letras; // Selector 4: Extención
     font-size: $tamaño_parrafo;
 }
 
@@ -41,7 +53,7 @@ $tamaño_marco: 15px;
     align-items: center;
     width: 50%;
     border: $tamaño_marco solid $marron;
-    &:hover { // Anidación
-        border: $tamaño_marco*2 solid $marron; // Operación
+    &:hover { // Selector 5: Anidación
+        border: $tamaño_marco*2 solid $marron; // Operación 3
     }
 }
