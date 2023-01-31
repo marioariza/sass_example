@@ -88,27 +88,23 @@ TOTAL {
 
 .boton_git, .boton_lin, .boton_cv {
   background-color: rgba(128, 128, 128, 0.236);
-  color: black;
   padding: 3px;
   margin: 10px;
   -webkit-box-shadow: 5px 0px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 0px rgba(0, 0, 0, 0.5);
   border: 2px solid black;
   border-radius: 8px;
-  text-decoration: none;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .boton_git:hover, .boton_lin:hover, .boton_cv:hover {
   background-color: blue;
-  color: white;
 }
 
 .enlace_git, .enlace_lin, .enlace_cv {
+  color: black;
   text-decoration: none;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .enlace_git:hover, .enlace_lin:hover, .enlace_cv:hover {
-  background-color: blue;
   color: white;
 }
 

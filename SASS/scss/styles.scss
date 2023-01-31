@@ -51,9 +51,8 @@ $tamaño_marco: 15px;
     font-family: $fuente_museo;
 }
 
-@mixin hoverBoton ($fondo, $letra) {
+@mixin hoverBoton ($fondo) {
     background-color: $fondo;
-    color: $letra;
 }
 
 @mixin hoverEnlace ($letra) {
