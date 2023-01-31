@@ -1,15 +1,17 @@
 /*
 
 TOTAL {
-    Variables: 6;
-    Anidamos y operaciones: 6 selectores;
-    Operaciones y funciones: 3 Operaciones y 0 Funciones;
-    Mixins: 0 Mixins;
-    Bucles: 0 Bucles:
-    Includes y otras funciones: 0 includes + otras funciones;
+    Variables: 7;
+    Anidamos y extendemos: 6 selectores;
+    Operaciones y funciones: 4 Operaciones y 0 Funciones;
+    Mixins: 1 Mixins;
+    Bucles: 3 Bucles:
+    Includes y otras funciones: 2 includes + otras funciones;
 }
 
 */
+
+@import "components/_funciones.scss";
 
 // Variables
 
@@ -20,14 +22,6 @@ $tamaño_titulo_cuadro: ($tamaño_titulo_arriba/2); // Operación 1
 $tamaño_parrafo: ($tamaño_titulo_arriba/3); // Operación 2
 $fuente_museo: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 $tamaño_marco: 15px;
-
-
-@mixin centrar {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .letras {
     text-align: center;
@@ -47,7 +41,7 @@ $tamaño_marco: 15px;
     @extend.letras; // Selector 3: Extención
     font-size: $tamaño_titulo_cuadro;
     -webkit-text-stroke: 1.5px black;
-    color: $marron; 
+    @include colorLetra($marron);
 }
 
 .parrafo-cuadro {
@@ -56,7 +50,7 @@ $tamaño_marco: 15px;
 }
 
 .marco-cuadro {
-    @include centrar();
+    @include centrar(); // Include 1
     width: 50%;
     border: $tamaño_marco solid $marron;
     &:hover { // Selector 5: Anidación
@@ -66,14 +60,53 @@ $tamaño_marco: 15px;
 
 .titulo-listas {
     @extend.titulo-cuadro;
-    color: $verde;
+    @include colorLetra($verde);
 }
 
 .listas {
     @extend.letras;
-    @include centrar();
+    @include centrar(); // Include 2
+    font-size: $tamaño_titulo_cuadro/2; // Operación 4
     width: 50%;
     &:hover { // Selector 6: Anidación
-        color: $verde;
+        @include colorLetra($verde);
+    }
+}
+
+@for $th from 0 through 5 {
+    .arriba:hover {
+        @include colorLetra(grey);
+    }
+}
+
+@for $th from 0 to 5 {
+    .lateral:hover {
+        @include colorLetra(green);
+    }
+}
+
+@for $td from 0 to 5 {
+    .DWES:hover {
+        @include colorLetra($verde);
+    }
+
+    .DWEC:hover {
+        @include colorLetra(rgb(175, 175, 232));
+    }
+
+    .DAW:hover {
+        @include colorLetra(rgb(232, 104, 104));
+    }
+
+    .DIW:hover {
+        @include colorLetra(rgba(255, 166, 0, 0.6));
+    }
+
+    .EMP:hover {
+        @include colorLetra(rgba(255, 255, 0, 0.49));
+    }
+
+    .HLC:hover {
+        @include colorLetra(rgba(128, 0, 128, 0.359));
     }
 }

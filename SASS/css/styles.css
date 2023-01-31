@@ -1,12 +1,12 @@
 /*
 
 TOTAL {
-    Variables: 6;
-    Anidamos y operaciones: 6 selectores;
-    Operaciones y funciones: 3 Operaciones y 0 Funciones;
-    Mixins: 0 Mixins;
-    Bucles: 0 Bucles:
-    Includes y otras funciones: 0 includes + otras funciones;
+    Variables: 7;
+    Anidamos y extendemos: 6 selectores;
+    Operaciones y funciones: 4 Operaciones y 0 Funciones;
+    Mixins: 1 Mixins;
+    Bucles: 3 Bucles:
+    Includes y otras funciones: 2 includes + otras funciones;
 }
 
 */
@@ -66,8 +66,173 @@ TOTAL {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 15px;
   width: 50%;
 }
 .listas:hover {
   color: rgb(35, 172, 35);
+}
+
+.arriba:hover {
+  color: grey;
+}
+
+.arriba:hover {
+  color: grey;
+}
+
+.arriba:hover {
+  color: grey;
+}
+
+.arriba:hover {
+  color: grey;
+}
+
+.arriba:hover {
+  color: grey;
+}
+
+.arriba:hover {
+  color: grey;
+}
+
+.lateral:hover {
+  color: green;
+}
+
+.lateral:hover {
+  color: green;
+}
+
+.lateral:hover {
+  color: green;
+}
+
+.lateral:hover {
+  color: green;
+}
+
+.lateral:hover {
+  color: green;
+}
+
+.DWES:hover {
+  color: rgb(35, 172, 35);
+}
+
+.DWEC:hover {
+  color: rgb(175, 175, 232);
+}
+
+.DAW:hover {
+  color: rgb(232, 104, 104);
+}
+
+.DIW:hover {
+  color: rgba(255, 166, 0, 0.6);
+}
+
+.EMP:hover {
+  color: rgba(255, 255, 0, 0.49);
+}
+
+.HLC:hover {
+  color: rgba(128, 0, 128, 0.359);
+}
+
+.DWES:hover {
+  color: rgb(35, 172, 35);
+}
+
+.DWEC:hover {
+  color: rgb(175, 175, 232);
+}
+
+.DAW:hover {
+  color: rgb(232, 104, 104);
+}
+
+.DIW:hover {
+  color: rgba(255, 166, 0, 0.6);
+}
+
+.EMP:hover {
+  color: rgba(255, 255, 0, 0.49);
+}
+
+.HLC:hover {
+  color: rgba(128, 0, 128, 0.359);
+}
+
+.DWES:hover {
+  color: rgb(35, 172, 35);
+}
+
+.DWEC:hover {
+  color: rgb(175, 175, 232);
+}
+
+.DAW:hover {
+  color: rgb(232, 104, 104);
+}
+
+.DIW:hover {
+  color: rgba(255, 166, 0, 0.6);
+}
+
+.EMP:hover {
+  color: rgba(255, 255, 0, 0.49);
+}
+
+.HLC:hover {
+  color: rgba(128, 0, 128, 0.359);
+}
+
+.DWES:hover {
+  color: rgb(35, 172, 35);
+}
+
+.DWEC:hover {
+  color: rgb(175, 175, 232);
+}
+
+.DAW:hover {
+  color: rgb(232, 104, 104);
+}
+
+.DIW:hover {
+  color: rgba(255, 166, 0, 0.6);
+}
+
+.EMP:hover {
+  color: rgba(255, 255, 0, 0.49);
+}
+
+.HLC:hover {
+  color: rgba(128, 0, 128, 0.359);
+}
+
+.DWES:hover {
+  color: rgb(35, 172, 35);
+}
+
+.DWEC:hover {
+  color: rgb(175, 175, 232);
+}
+
+.DAW:hover {
+  color: rgb(232, 104, 104);
+}
+
+.DIW:hover {
+  color: rgba(255, 166, 0, 0.6);
+}
+
+.EMP:hover {
+  color: rgba(255, 255, 0, 0.49);
+}
+
+.HLC:hover {
+  color: rgba(128, 0, 128, 0.359);
 }
