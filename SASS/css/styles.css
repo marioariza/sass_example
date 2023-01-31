@@ -6,7 +6,7 @@ TOTAL {
     Operaciones y funciones: 4 Operaciones y 0 Funciones;
     Mixins: 1 Mixins;
     Bucles: 3 Bucles:
-    Includes y otras funciones: 2 includes + otras funciones;
+    Includes y otras funciones: 12 includes + otras funciones;
 }
 
 */
@@ -73,6 +73,45 @@ TOTAL {
   color: rgb(35, 172, 35);
 }
 
+.botones {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.boton_git, .boton_lin, .boton_cv {
+  background-color: rgba(128, 128, 128, 0.236);
+  color: black;
+  padding: 3px;
+  margin: 10px;
+  -webkit-box-shadow: 5px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 0px rgba(0, 0, 0, 0.5);
+  border: 2px solid black;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.boton_git:hover, .boton_lin:hover, .boton_cv:hover {
+  background-color: blue;
+  color: white;
+}
+
+.enlace_git, .enlace_lin, .enlace_cv {
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.enlace_git:hover, .enlace_lin:hover, .enlace_cv:hover {
+  background-color: blue;
+  color: white;
+}
+
 .arriba:hover {
   color: grey;
 }
@@ -115,6 +154,34 @@ TOTAL {
 
 .lateral:hover {
   color: green;
+}
+
+.lateral:hover {
+  color: green;
+}
+
+.DWES:hover {
+  color: rgb(35, 172, 35);
+}
+
+.DWEC:hover {
+  color: rgb(175, 175, 232);
+}
+
+.DAW:hover {
+  color: rgb(232, 104, 104);
+}
+
+.DIW:hover {
+  color: rgba(255, 166, 0, 0.6);
+}
+
+.EMP:hover {
+  color: rgba(255, 255, 0, 0.49);
+}
+
+.HLC:hover {
+  color: rgba(128, 0, 128, 0.359);
 }
 
 .DWES:hover {

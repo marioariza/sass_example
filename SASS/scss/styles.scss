@@ -11,8 +11,6 @@ TOTAL {
 
 */
 
-@import "components/_funciones.scss";
-
 // Variables
 
 $marron: #a05000;
@@ -30,6 +28,36 @@ $tamaño_marco: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin colorLetra($color) {
+    color: $color;
+}
+
+@mixin colorBoton ($fondo) {
+    background-color: $fondo;
+}
+
+@mixin decoracionBoton {
+    padding: 3px;
+    margin: 10px;
+    box-shadow: 5px 0px rgba(0,0,0,0.5);
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+@mixin letraBoton {
+    text-decoration: none;
+    font-family: $fuente_museo;
+}
+
+@mixin hoverBoton ($fondo, $letra) {
+    background-color: $fondo;
+    color: $letra;
+}
+
+@mixin hoverEnlace ($letra) {
+    color: $letra;
 }
 
 // BODY
@@ -84,21 +112,41 @@ $tamaño_marco: 15px;
     }
 }
 
+.botones {
+    @include centrar();
+}
+
+.boton_git,.boton_lin,.boton_cv {
+    @include colorBoton (rgba(128, 128, 128, 0.236));
+    @include decoracionBoton();
+    &:hover{
+        @include hoverBoton(blue)
+    }
+}
+
+.enlace_git,.enlace_lin,.enlace_cv {
+    @include colorLetra(black);
+    @include letraBoton();
+    &:hover{
+        @include hoverEnlace(white)
+    }
+}
+
 // BUCLES
 
-@for $th from 0 through 5 {
+@for $th from 0 through 5 { // Bucle 1
     .arriba:hover {
         @include colorLetra(grey); // Include 5
     }
 }
 
-@for $th from 0 to 5 {
+@for $th from 0 through 5 { // Bucle 2
     .lateral:hover {
         @include colorLetra(green); // Include 6
     }
 }
 
-@for $td from 0 to 5 {
+@for $td from 0 through 5 { // Bucle 3
     .DWES:hover {
         @include colorLetra($verde); // Include 7
     }
