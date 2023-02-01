@@ -4,9 +4,9 @@ TOTAL {
     Variables: 7;
     Anidamos y extendemos: 6 selectores;
     Operaciones y funciones: 4 Operaciones y 0 Funciones;
-    Mixins: 1 Mixins;
+    Mixins: 7 Mixins;
     Bucles: 3 Bucles:
-    Includes y otras funciones: 12 includes + otras funciones;
+    Includes y otras funciones: 20 includes + otras funciones;
 }
 
 */
@@ -20,6 +20,21 @@ $tamaño_titulo_cuadro: ($tamaño_titulo_arriba/2); // Operación 1
 $tamaño_parrafo: ($tamaño_titulo_arriba/3); // Operación 2
 $fuente_museo: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 $tamaño_marco: 15px;
+
+// FUNCIONES
+
+@function small($tamaño) {
+    @return $tamaño-6;
+}
+
+@function medium($tamaño) {
+    @return $tamaño-4;
+}
+
+@function large($tamaño) {
+    @return $tamaño-2;
+}
+
 
 // MIXINS 
 
@@ -129,44 +144,78 @@ $tamaño_marco: 15px;
     &:hover{
         @include hoverEnlace(white)
     }
+    font-size: $tamaño_parrafo;
 }
 
 // BUCLES
 
 @for $th from 0 through 5 { // Bucle 1
     .arriba:hover {
-        @include colorLetra(grey); // Include 5
+        @include colorLetra(grey); 
     }
 }
 
 @for $th from 0 through 5 { // Bucle 2
     .lateral:hover {
-        @include colorLetra(green); // Include 6
+        @include colorLetra(green); 
     }
 }
 
 @for $td from 0 through 5 { // Bucle 3
     .DWES:hover {
-        @include colorLetra($verde); // Include 7
+        @include colorLetra($verde); 
     }
 
     .DWEC:hover {
-        @include colorLetra(rgb(175, 175, 232)); // Include 8
+        @include colorLetra(rgb(175, 175, 232)); 
     }
 
     .DAW:hover {
-        @include colorLetra(rgb(232, 104, 104)); // Include 9
+        @include colorLetra(rgb(232, 104, 104)); 
     }
 
     .DIW:hover {
-        @include colorLetra(rgba(255, 166, 0, 0.6)); // Include 10
+        @include colorLetra(rgba(255, 166, 0, 0.6)); 
     }
 
     .EMP:hover {
-        @include colorLetra(rgba(255, 255, 0, 0.49)); // Include 11
+        @include colorLetra(rgba(255, 255, 0, 0.49)); 
     }
 
     .HLC:hover {
-        @include colorLetra(rgba(128, 0, 128, 0.359)); // Include 12
+        @include colorLetra(rgba(128, 0, 128, 0.359)); 
     }
+}
+
+// PANTALLAS
+
+@media (max-width: 600px) {
+
+    .titulo-arriba {
+        font-size: small($tamaño_titulo_arriba);
+    }
+    
+    .titulo-cuadro {
+        font-size: small($tamaño_titulo_cuadro);
+    }
+    
+    .parrafo-cuadro {
+        font-size: small($tamaño_parrafo);
+    }
+
+    .listas {
+        font-size: small($tamaño_titulo_cuadro/2);
+    }
+    
+    .enlace_git,.enlace_lin,.enlace_cv {
+        font-size: small($tamaño_parrafo);
+    }
+}
+
+@media (max-width: 800px) {
+    
+}
+
+@media (max-width: 1200px) {
+
 }

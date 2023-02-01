@@ -4,9 +4,9 @@ TOTAL {
     Variables: 7;
     Anidamos y extendemos: 6 selectores;
     Operaciones y funciones: 4 Operaciones y 0 Funciones;
-    Mixins: 1 Mixins;
+    Mixins: 7 Mixins;
     Bucles: 3 Bucles:
-    Includes y otras funciones: 12 includes + otras funciones;
+    Includes y otras funciones: 20 includes + otras funciones;
 }
 
 */
@@ -298,4 +298,19 @@ TOTAL {
 
 .HLC:hover {
   color: rgba(128, 0, 128, 0.359);
+}
+
+@media (max-width: 600px) {
+  .titulo-arriba {
+    font-size: 10px;
+  }
+  .titulo-cuadro, .titulo-listas {
+    font-size: 5px;
+  }
+  .parrafo-cuadro {
+    font-size: 3.3333333333px;
+  }
+  .listas {
+    font-size: 2.5px;
+  }
 }
