@@ -3,14 +3,14 @@
 TOTAL {
     Variables: 7;
     Anidamos y extendemos: 6 selectores;
-    Operaciones y funciones: 4 Operaciones y 0 Funciones;
+    Operaciones y funciones: 4 Operaciones y 3 Funciones;
     Mixins: 7 Mixins;
-    Bucles: 3 Bucles:
+    Bucles: 4 Bucles:
     Includes y otras funciones: 20 includes + otras funciones;
 }
 
 */
-.letras, .listas, .parrafo-cuadro, .titulo-cuadro, .titulo-listas, .titulo-arriba {
+.letras, .listas_len, .listas, .parrafo-cuadro, .titulo-cuadro, .titulo-listas, .titulo-arriba {
   text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
@@ -71,6 +71,21 @@ TOTAL {
 }
 .listas:hover {
   color: rgb(35, 172, 35);
+}
+
+.listas_len {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  width: 50%;
 }
 
 .botones {
@@ -301,6 +316,106 @@ TOTAL {
   color: rgba(128, 0, 128, 0.359);
 }
 
+.html:hover {
+  color: rgba(255, 166, 0, 0.6);
+}
+
+.php:hover {
+  color: rgba(128, 0, 128, 0.359);
+}
+
+.js:hover {
+  color: rgba(255, 255, 0, 0.49);
+}
+
+.java:hover {
+  color: rgb(175, 175, 232);
+}
+
+.mysql:hover {
+  color: rgba(11, 0, 128, 0.797);
+}
+
+.html:hover {
+  color: rgba(255, 166, 0, 0.6);
+}
+
+.php:hover {
+  color: rgba(128, 0, 128, 0.359);
+}
+
+.js:hover {
+  color: rgba(255, 255, 0, 0.49);
+}
+
+.java:hover {
+  color: rgb(175, 175, 232);
+}
+
+.mysql:hover {
+  color: rgba(11, 0, 128, 0.797);
+}
+
+.html:hover {
+  color: rgba(255, 166, 0, 0.6);
+}
+
+.php:hover {
+  color: rgba(128, 0, 128, 0.359);
+}
+
+.js:hover {
+  color: rgba(255, 255, 0, 0.49);
+}
+
+.java:hover {
+  color: rgb(175, 175, 232);
+}
+
+.mysql:hover {
+  color: rgba(11, 0, 128, 0.797);
+}
+
+.html:hover {
+  color: rgba(255, 166, 0, 0.6);
+}
+
+.php:hover {
+  color: rgba(128, 0, 128, 0.359);
+}
+
+.js:hover {
+  color: rgba(255, 255, 0, 0.49);
+}
+
+.java:hover {
+  color: rgb(175, 175, 232);
+}
+
+.mysql:hover {
+  color: rgba(11, 0, 128, 0.797);
+}
+
+.html:hover {
+  color: rgba(255, 166, 0, 0.6);
+}
+
+.php:hover {
+  color: rgba(128, 0, 128, 0.359);
+}
+
+.js:hover {
+  color: rgba(255, 255, 0, 0.49);
+}
+
+.java:hover {
+  color: rgb(175, 175, 232);
+}
+
+.mysql:hover {
+  color: rgba(11, 0, 128, 0.797);
+}
+
 @media (max-width: 600px) {
   .titulo-arriba {
     font-size: 54px;
@@ -337,18 +452,18 @@ TOTAL {
 }
 @media (max-width: 1200px) {
   .titulo-arriba {
-    font-size: 54px;
+    font-size: 58px;
   }
   .titulo-cuadro, .titulo-listas {
-    font-size: 24px;
+    font-size: 28px;
   }
   .parrafo-cuadro {
-    font-size: 14px;
+    font-size: 18px;
   }
   .listas {
-    font-size: 9px;
+    font-size: 13px;
   }
   .enlace_git, .enlace_lin, .enlace_cv {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
