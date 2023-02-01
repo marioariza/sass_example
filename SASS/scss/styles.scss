@@ -24,11 +24,11 @@ $tamaño_marco: 15px;
 // FUNCIONES
 
 @function small($tamaño) {
-    @return $tamaño-6;
+    @return $tamaño - 6;
 }
 
 @function medium($tamaño) {
-    @return $tamaño-4;
+    @return $tamaño - 4;
 }
 
 @function large($tamaño) {
@@ -213,9 +213,45 @@ $tamaño_marco: 15px;
 }
 
 @media (max-width: 800px) {
+    .titulo-arriba {
+        font-size: medium($tamaño_titulo_arriba);
+    }
     
+    .titulo-cuadro {
+        font-size: medium($tamaño_titulo_cuadro);
+    }
+    
+    .parrafo-cuadro {
+        font-size: medium($tamaño_parrafo);
+    }
+
+    .listas {
+        font-size: medium($tamaño_titulo_cuadro/2);
+    }
+    
+    .enlace_git,.enlace_lin,.enlace_cv {
+        font-size: medium($tamaño_parrafo);
+    }
 }
 
 @media (max-width: 1200px) {
+    .titulo-arriba {
+        font-size: large($tamaño_titulo_arriba);
+    }
+    
+    .titulo-cuadro {
+        font-size: large($tamaño_titulo_cuadro);
+    }
+    
+    .parrafo-cuadro {
+        font-size: large($tamaño_parrafo);
+    }
 
+    .listas {
+        font-size: large($tamaño_titulo_cuadro/2);
+    }
+    
+    .enlace_git,.enlace_lin,.enlace_cv {
+        font-size: large($tamaño_parrafo);
+    }
 }
